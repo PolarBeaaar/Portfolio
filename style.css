@@ -1,0 +1,170 @@
+body {
+    background-color: #010C15;
+    font-family:Montserrat ;
+    display: flex;
+}
+#Sobrepor {
+    background-color: #011627;
+    width: 98vw;
+    height: 98vh;
+    margin: 0 auto;
+    margin-right:auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#Sobrepor::before {
+    z-index: -1;
+    filter: blur();
+}
+
+#Navegar span{
+
+    font-size:45px;
+    color: #607B96;
+    display: inline-block;
+    position: relative;
+}
+
+
+#AcimaFundo {
+    width: 700px;
+    height: 600px;
+    z-index: 2;
+    position: absolute;
+    bottom: 300px;
+    left: 250px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+
+.dentroCirculo {
+    background-color: #010C15;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+@property --angle{
+    syntax: '<percentage>'; /* its type */
+    inherits: false;
+    initial-value: 0%; /* the initial value */
+  }
+
+  @property --angle2{
+    syntax: '<percentage>'; /* its type */
+    inherits: false;
+    initial-value: 0%; /* the initial value */
+  }
+#circular {
+
+    box-sizing: border-box;
+    display: flex; /* Usando display: flex */
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    height: 160px;
+    transform: translate(10%, 10%);
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.8);
+    transition:  --angle 1s;
+    background: conic-gradient(#010C15 var(--angle), #011627 0%);
+    
+}
+
+#circular:hover {
+    --angle:80%
+}
+
+#circular2 {
+
+    box-sizing: border-box;
+    display: flex; /* Usando display: flex */
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    height: 160px;
+    transform: translate(10%, 10%);
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.8);
+    transition:  --angle2 1s;
+    background: conic-gradient(#010C15 var(--angle2), #011627 0%);
+    
+}
+
+#labelInsideWrapper {
+        position: relative;
+    left: 10%;
+    right: 0%;
+    color: #ffffff;
+    font-family: Montserrat;
+}
+
+#circular2:hover {
+    --angle2:20%
+}
+
+
+#wrapper2 { /*Setar posicao kkkk*/
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 170%;
+}
+
+
+
+.labelInsideWrapper {
+    position: relative;
+    left: 50%;
+    right: 0%;
+    color: #ffffff;
+    font-family: Montserrat;
+}
+.percent {
+    display: block;
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #607B96;
+    font-family: Montserrat;
+}
+
+#wrapper1 { /*Setar posicao kkkk*/
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 120%;
+}
+
+
+h1 {
+    font-size: 100px;
+    margin: 0px;
+}
+
+#pfp {
+    width: 500px;
+    border-radius: 50%;
+    border: solid;
+    transition: transform .5s ease-in-out;
+}
+
+#pfp:hover {
+
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #607B96;
+}
